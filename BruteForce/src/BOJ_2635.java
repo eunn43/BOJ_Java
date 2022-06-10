@@ -7,11 +7,13 @@ public class BOJ_2635 {
 		int n = input.nextInt();
 		int max = 0;
 		String answer = "";
+		
 		for(int i = n; i >= n / 2; i--) {
 			int cnt = 2;
 			int first = n;
 			int second = i;
 			String str = n + " " + i;
+			
 			while(first - second >= 0) {
 				int third = first - second;
 				first = second;
@@ -19,6 +21,7 @@ public class BOJ_2635 {
 				str += " " + third;
 				cnt++;
 			}
+			
 			if(max < cnt) {
 				max = cnt;
 				answer = str;
