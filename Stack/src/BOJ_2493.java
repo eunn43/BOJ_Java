@@ -7,9 +7,9 @@ import java.util.StringTokenizer;
 public class BOJ_2493 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(br.readLine());
         Stack<int []> stack = new Stack<>();
         StringBuilder sb = new StringBuilder();
+        int n = Integer.parseInt(br.readLine());
         StringTokenizer st = new StringTokenizer(br.readLine());
 
         for(int i = 1; i <= n; i++) {
